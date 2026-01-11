@@ -3,10 +3,11 @@
 
 #include "pch.h"
 #include "framework.h"
-
 #include "LibraryCode.hpp"
-
 #include <algorithm>
+#include <cctype>
+#include <cstring>
+
 
 bool isPositive(int x)
 {
@@ -16,4 +17,15 @@ bool isPositive(int x)
 int countPositives(std::vector<int> const& inputVector)
 {
     return std::count_if(inputVector.begin(), inputVector.end(), isPositive);
+}
+
+
+//hello world -> HELLO WORLD
+
+void toUpper(char* inputString)
+{
+    for (unsigned i = 0; i < strlen(inputString); i++)
+    {
+        inputString[i] = toupper(inputString[i]); //a -> A, b -> B
+    }
 }

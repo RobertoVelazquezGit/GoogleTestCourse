@@ -41,3 +41,47 @@ TEST(TestCountPositives, AllNegativesTest)
 	std::cout << "After the assertion" << std::endl;
 }
 
+
+// Does not debug break here
+// Project GTest, Right click ? Properties ? Debugging, 
+//  Working Directory ? $(TargetDir)
+//  Debugger Type     ? Auto
+// 
+// Tools ? Options ? Debugging ? Symbols
+//  Check "Microsoft Symbol Servers"
+//  Add new location: GoogleTest\x64\Debug\
+// 
+// Clean and Build solution
+
+
+TEST(ToUpperTest, BasicTest)
+{
+    //Arrange
+    char inputString[] = "Hello World";
+
+    __debugbreak();   // Always stops 
+    //Act
+    toUpper(inputString);
+
+    std::cout << "After toUpper: " << inputString << '\n';
+    if (inputString == "HELLO WORLD") // pointer
+    {
+        std::cout << "Equal strings\n";
+    }
+    else
+    {
+        std::cout << "Unequal strings\n";
+    }
+
+    if (0 == strcmp(inputString, "HELLO WORLD")) // content
+    {
+        std::cout << "Equal strings\n";
+    }
+    else
+    {
+        std::cout << "Unequal strings\n";
+    }
+    //ASSERT
+    ASSERT_EQ("HELLO WORLD", inputString);
+}
+
