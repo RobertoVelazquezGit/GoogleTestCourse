@@ -35,6 +35,8 @@ TEST(TestCountPositives, AllNegativesTest)
     int count = countPositives(inputVector);
 
     //Assert
-    ASSERT_EQ(0, count);
+	ASSERT_EQ(20, count); // This will cause the test to fail
+	//EXPECT_GE(20, count); // This will log a failure but continue execution
+	std::cout << "After the assertion" << std::endl;
 }
 
