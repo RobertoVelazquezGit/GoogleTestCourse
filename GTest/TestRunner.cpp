@@ -53,13 +53,11 @@ TEST(TestCountPositives, AllNegativesTest)
 // 
 // Clean and Build solution
 
-
 TEST(ToUpperTest, BasicTest)
 {
     //Arrange
     char inputString[] = "Hello World";
 
-    __debugbreak();   // Always stops 
     //Act
     toUpper(inputString);
 
@@ -75,11 +73,11 @@ TEST(ToUpperTest, BasicTest)
 
     if (0 == strcmp(inputString, "HELLO WORLD")) // content
     {
-        std::cout << "Equal strings\n";
+        std::cout << "Equal strings (strcmp)\n";
     }
     else
     {
-        std::cout << "Unequal strings\n";
+        std::cout << "Unequal strings (strcmp)\n";
     }
     //ASSERT
     ASSERT_EQ("HELLO WORLD", inputString);
