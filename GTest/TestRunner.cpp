@@ -80,6 +80,13 @@ TEST(ToUpperTest, BasicTest)
         std::cout << "Unequal strings (strcmp)\n";
     }
     //ASSERT
-    ASSERT_EQ("HELLO WORLD", inputString);
+	// Commented out ASSERT_EQ("HELLO WORLD", inputString);  // Fails because ASSERT_EQ compares pointers for char*
+
+    ASSERT_STREQ("HELLO WORLD", inputString);
+    ASSERT_STRCASEEQ("Hello WORLD", inputString);
+
+    // or the other example:
+    std::string str(inputString);
+    ASSERT_EQ("HELLO WORLD", str);
 }
 
