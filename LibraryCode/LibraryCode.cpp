@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <cctype>
 #include <cstring>
+#include <iostream> 
 
 
 bool isPositive(int x)
@@ -28,4 +29,15 @@ void toUpper(char* inputString)
     {
         inputString[i] = toupper(inputString[i]); //a -> A, b -> B
     }
+}
+
+double mySqrt(double input)
+{
+    if (input < 0)
+    {
+        std::cout << "Exception thrown\n";
+        throw std::runtime_error("Negative argument");
+    }
+    std::cout << "No exception thrown\n";
+    return sqrt(input);
 }
