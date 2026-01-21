@@ -9,5 +9,7 @@ public:
 
     // Convierte a mayúsculas
     static std::string ToUpper(const std::string& input);
+
+    static bool IsLowerCase(const std::string& input);
 };
 

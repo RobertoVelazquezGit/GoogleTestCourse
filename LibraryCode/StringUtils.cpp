@@ -30,3 +30,10 @@ std::string StringUtils::ToUpper(const std::string& input) {
 
     return result;
 }
+
+bool StringUtils::IsLowerCase(const std::string& input) {
+    return std::all_of(input.begin(), input.end(),
+        [](unsigned char c) {
+            return !std::isalpha(c) || std::islower(c);
+        });
+}
