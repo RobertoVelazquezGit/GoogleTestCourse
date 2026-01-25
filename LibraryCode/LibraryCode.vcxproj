@@ -137,6 +137,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Account.hpp" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="IPasarelaPago.h" />
     <ClInclude Include="LibraryCode.hpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="StringUtils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Account.cpp" />
     <ClCompile Include="LibraryCode.cpp" />
     <ClCompile Include="PasarelaReal.cpp" />
     <ClCompile Include="pch.cpp">

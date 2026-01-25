@@ -104,6 +104,9 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AccountTestFixtures.cpp" />
+    <ClCompile Include="AccountTestFixturesSubclass.cpp" />
+    <ClCompile Include="AccountTestNoFixtures.cpp" />
     <ClCompile Include="StringUtilsTest.cpp" />
     <ClCompile Include="TestRunner.cpp" />
     <ClCompile Include="pch.cpp">
