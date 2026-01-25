@@ -39,6 +39,9 @@
     <ClInclude Include="Account.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Validator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LibraryCode.cpp">
@@ -57,6 +60,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Account.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Validator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

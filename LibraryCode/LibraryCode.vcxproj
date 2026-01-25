@@ -145,6 +145,7 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="Procesador.h" />
     <ClInclude Include="StringUtils.h" />
+    <ClInclude Include="Validator.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
@@ -158,6 +159,7 @@
     </ClCompile>
     <ClCompile Include="Procesador.cpp" />
     <ClCompile Include="StringUtils.cpp" />
+    <ClCompile Include="Validator.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

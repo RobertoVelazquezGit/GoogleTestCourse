@@ -115,6 +115,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ValidatorTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LibraryCode\LibraryCode.vcxproj">
