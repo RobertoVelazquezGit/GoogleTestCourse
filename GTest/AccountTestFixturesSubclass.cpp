@@ -59,8 +59,8 @@ class AccountTestFixtureChild : public AccountTestFixtureSubclass
 public:
     AccountTestFixtureChild();
     ~AccountTestFixtureChild();
-    void SetUp();
-    void TearDown();
+    void SetUp() override;
+    void TearDown() override;
     static void SetUpTestCase();
     static void TearDownTestCase();
 };
