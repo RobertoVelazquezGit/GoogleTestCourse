@@ -163,16 +163,31 @@ TEST(WindowsSuite, DummyTest3)
 #endif
 }
 
+// In Linux in commnad line
+// Examples
+// ./unitTestRunner --gtest_filter="UnixSuite.*
+// ./unitTestRunner --gtest_filter="UnixSuite.DummyTest1"   
+
 //int main(int argc, char** argv)
 //{
 //#ifdef _WIN64
-//    testing::GTEST_FLAG(filter) = "WindowsSuite.*";
+//    testing::GTEST_FLAG(filter) = "WindowsSuite.*";  // "-WindowsSuite.DummyTest1" does all except WindowsSuite.DummyTest1
 //#else
 //    testing::GTEST_FLAG(filter) = "UnixSuite.*";
 //#endif
 //    testing::InitGoogleTest(&argc, argv);
 //    return RUN_ALL_TESTS();
 //}
+
+// In Visual studio, you can set the command line arguments for debugging the tests.    
+// See in Porpertires ? Debugging ? Command Arguments  --gtest_output="xml:test_output.xml"
+// In the output directory, you will find test_output.xml with the test results in XML format. You can use this file to generate reports or integrate with CI/CD pipelines. 
+// Threre are also other options for test output format, such as JSON, which can be specified using --gtest_output="json:test_output.json". This allows you to choose the format that best suits your needs for analyzing test results. 
+
+// In Linux in Visual Studio Code, you can install an extension similar to the Test Explorer here in Visual Studio in windows :
+// C++ TestMate, and in Linux : GoogleTest Adapter. These extensions provide a user-friendly interface for running and debugging tests directly from the editor. You can easily navigate through test cases, view results, and even set breakpoints for debugging specific tests. This integration enhances the overall testing experience and allows for efficient test management within Visual Studio Code. 
+
+// Suggested reading: Test Driven Development with C++ by Abdul Wahid Tanner
 
 
 
