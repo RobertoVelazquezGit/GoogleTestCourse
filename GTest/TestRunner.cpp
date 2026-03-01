@@ -163,8 +163,6 @@ TEST(WindowsSuite, DummyTest3)
 #endif
 }
 
-
-
 //int main(int argc, char** argv)
 //{
 //#ifdef _WIN64
